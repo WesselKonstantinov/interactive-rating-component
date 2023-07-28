@@ -143,3 +143,39 @@ body {
   width: 0.8725rem;
   height: 0.833125rem;
 }
+
+.card__heading {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+
+.card__text {
+  --flow-space: 0.625rem;
+}
+
+.rating-form {
+  --flow-space: 1.5rem;
+}
+
+.rating-form__group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.rating-form__submit {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 1.40625rem;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 0.1333em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  cursor: pointer;
+}
