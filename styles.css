@@ -110,3 +110,36 @@ body {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* || Interactive rating component styles */
+
+.card {
+  max-width: 25.75rem;
+  margin: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem;
+  border-radius: 0.9375rem;
+  background-image: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    hsl(215 20% 17%),
+    hsl(216 24% 12%)
+  );
+}
+
+.card > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.card__icon-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-dark-blue);
+}
+
+.card__icon {
+  width: 0.8725rem;
+  height: 0.833125rem;
+}
