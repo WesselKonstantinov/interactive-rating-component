@@ -86,3 +86,27 @@ select {
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
+
+/* || Global styles */
+body {
+  display: grid;
+  place-content: center;
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-light-grey);
+  font-family: var(--font-family-primary);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.57;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
