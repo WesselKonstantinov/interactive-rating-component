@@ -138,6 +138,10 @@ body {
   text-align: center;
 }
 
+.card--hidden {
+  display: none;
+}
+
 .card__icon-container {
   width: 2.5rem;
   height: 2.5rem;
