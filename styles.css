@@ -170,7 +170,6 @@ body {
 }
 
 .card__selected-rating-container {
-  width: 10.5rem;
   display: inline-block;
   padding: 0.3125rem 0.75rem;
   background-color: var(--color-dark-blue);
@@ -181,11 +180,57 @@ body {
   color: var(--color-orange);
 }
 
+/* || Rating form styles */
 .rating-form__group {
   border: none;
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rating-form__control {
+  display: grid;
+  grid-template-areas: "radio";
+}
+
+.rating-form__radio {
+  grid-area: radio;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 2.625rem;
+  height: 2.625rem;
+  background-color: var(--color-dark-blue);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rating-form__radio:hover {
+  background-color: var(--color-orange);
+}
+
+.rating-form__radio:checked {
+  background-color: var(--color-medium-grey);
+}
+
+.rating-form__label {
+  grid-area: radio;
+  place-self: center;
+  color: var(--color-medium-grey);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.0125em;
+  line-height: 1.714;
+  cursor: pointer;
+}
+
+.rating-form__radio:hover + .rating-form__label {
+  color: var(--color-white);
+}
+
+.rating-form__radio:checked + .rating-form__label {
+  color: var(--color-white);
 }
 
 .rating-form__submit {
