@@ -113,7 +113,7 @@ body {
 
 /* || Interactive rating component styles */
 .card {
-  max-width: 25.75rem;
+  max-width: 20.4375rem;
   margin: 1.5rem;
   padding: 1.5rem 1.5rem 2rem;
   border-radius: 0.9375rem;
@@ -241,9 +241,75 @@ body {
   border-radius: 1.40625rem;
   background-color: var(--color-orange);
   color: var(--color-white);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   letter-spacing: 0.1333em;
   text-transform: uppercase;
   line-height: 1.5;
   cursor: pointer;
+}
+
+@media (min-width: 35rem) {
+  body {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  .card {
+    max-width: 25.75rem;
+    padding: 2rem 2.4375rem 2rem 2rem;
+  }
+
+  .card--centered {
+    padding: 2.8125rem 2.5rem 2.8125rem 2rem;
+  }
+
+  .card__icon-container {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .card__icon {
+    width: 1.0625rem;
+    height: 1rem;
+  }
+
+  .card__heading {
+    --flow-space: 1.875rem;
+    font-size: 1.75rem;
+    line-height: 1.535;
+  }
+
+  .card__heading--extra-space {
+    --flow-space: 2rem;
+  }
+
+  .card__text {
+    --flow-space: 0.4375rem;
+  }
+
+  .card__illustration {
+    width: 10.125rem;
+    height: 6.75rem;
+  }
+
+  .card__selected-rating-container {
+    --flow-space: 2rem;
+    padding: 0.25rem 1.25rem;
+  }
+
+  .rating-form__radio {
+    width: 3.1875rem;
+    height: 3.1875rem;
+  }
+
+  .rating-form__label {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .rating-form__submit {
+    margin-top: 2rem;
+    padding: 0.6875rem;
+    line-height: 1.533;
+  }
 }
